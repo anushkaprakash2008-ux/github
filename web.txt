@@ -1,0 +1,1074 @@
+1. What is javascript
+ans. JavaScript is a scripting programming language used to create interactive and dynamic web pages. It is mainly used in web browsers to control webpage behavior.
+
+2. Why JavaScript
+ans. To make web pages interactive.
+To handle user actions like clicks and form input.
+To update web content dynamically without reloading the page.
+
+3. How to add Javascript in to HTML docmumet
+ans.  JavaScript can be added to an HTML file using the <script> tag.
+<script>
+  alert("Hello World");
+</script>
+
+4. Write a short notes on History of JavaScript
+ans. JavaScript was created in 1995 by Brendan Eich at Netscape.
+It was first called Mocha, then renamed LiveScript, and later JavaScript.
+It was developed to make web pages interactive in web browsers.
+Later, it became a standard called ECMAScript.
+
+5. How to add comment in javascript
+ans. Comments in JavaScript are written using // for single-line and /* */ for multi-line comments.
+
+6. Explain primitive data types of JavaScript
+ans. Number – stores numeric values (e.g., 10, 3.14).
+String – stores text values (e.g., "Hello").
+Boolean – stores true or false values.
+Undefined – variable declared but not assigned a value.
+Null – represents an empty or no value.
+Symbol – used for unique identifiers.
+
+7. Explain composite data types of JavaScript
+ans. Object – Stores key-value pairs. Example:
+let person = {name: "John", age: 25};
+Array – Stores multiple values in a single variable. Example:
+let numbers = [1, 2, 3, 4, 5];
+
+8. What is typeconversion ?How we can do it in JavaScript
+ans. Type conversion is the process of converting a value from one data type to another.
+
+Ways to do it in JavaScript:
+
+String Conversion – Convert values to a string:
+let num = 10;
+let str = String(num); // "10"
+
+Number Conversion – Convert values to a number:
+let str = "123";
+let num = Number(str); // 123
+
+Boolean Conversion – Convert values to true/false:
+let val = 0;
+let bool = Boolean(val); // false
+
+9. What is variable in Javascript?
+ans. A variable is a named storage that holds data values which can be changed or updated during program execution.
+
+10. What is paresInt() and parseFloat()?
+ans. parseInt() – Converts a string to an integer (whole number).
+parseFloat() – Converts a string to a floating-point number (decimal number).
+
+11. Write a short notes on Operators in JavaScript
+ans. Operators are symbols used to perform operations on values or variables.
+
+Main types of operators:
+Arithmetic Operators – +, -, *, /, % (for calculations).
+Assignment Operators – =, +=, -= (to assign values).
+Comparison Operators – ==, ===, >, <, != (to compare values).
+Logical Operators – &&, ||, ! (for logical operations).
+String Operators – + (to concatenate strings).
+
+12. Explain Arithmetic Operator, Bitwise operator, Logical operator, Comparison operator 
+ans. Arithmetic Operators:
+Used for mathematical calculations.
+Examples: + (addition), - (subtraction), * (multiplication), / (division), % (modulus).
+let sum = 5 + 3; // 8
+
+Bitwise Operators:
+Operate on binary representation of numbers.
+Examples: & (AND), | (OR), ^ (XOR), ~ (NOT), <<, >> (shifts).
+let result = 5 & 3; // 1 (binary AND)
+
+Logical Operators:
+Used to perform logical operations on Boolean values.
+Examples: && (AND), || (OR), ! (NOT).
+let result = (5 > 3) && (2 < 4); // true
+
+Comparison Operators:
+Used to compare values and return true or false.
+Examples: ==, ===, !=, >, <, >=, <=.
+let result = 5 == "5"; // true
+
+13. what is comma and void operator in javascript?
+ans. Comma Operator (,)
+Allows multiple expressions to be evaluated in a single statement, returning the value of the last expression.
+Void Operator (void)
+Evaluates an expression without returning any value, often used to prevent returning a value from a function or expression.
+
+14. What is typeof operator,conditional operator in javascript
+ans. typeof Operator:
+Used to check the data type of a variable or value.
+Conditional (Ternary) Operator (? :)
+A shorthand for an if-else statement that chooses between two values based on a condition.
+
+15. Write a program to find greates of three number
+ans. let a = 10, b = 25, c = 15;
+if (a > b && a > c) {
+    console.log("Greatest number is: " + a);
+} else if (b > a && b > c) {
+    console.log("Greatest number is: " + b);
+} else {
+    console.log("Greatest number is: " + c);
+}
+
+16. Write a short notes on if,if-else statementes with example
+ans. if Statement:
+Used to execute a block of code only if a condition is true.
+Syntax & Example:
+let num = 10;
+if(num > 5){
+    console.log("Number is greater than 5");
+}
+
+if-else Statement:
+Used to execute one block if the condition is true and another if false.
+Syntax & Example:
+let num = 3;
+if(num > 5){
+    console.log("Number is greater than 5");
+} else {
+    console.log("Number is 5 or less");
+}
+
+17. Explain Switch staement with example
+ans. The switch statement is used to execute one block of code among many based on the value of a variable. It is an alternative to multiple if-else statements.
+let day = 3;
+let dayName;
+switch(day) {
+    case 1:
+        dayName = "Sunday";
+        break;
+    case 2:
+        dayName = "Monday";
+        break;
+    case 3:
+        dayName = "Tuesday";
+        break;
+    default:
+        dayName = "Invalid day";
+}
+console.log(dayName); // Output: Tuesday
+
+18. Write a program to print even numbers in between 1 to 100 using while 
+ans. let i = 1;
+
+while(i <= 100) {
+    if(i % 2 === 0) {
+        console.log(i);
+    }
+    i++;
+}
+
+19. Write a program to print the numbers from 100 to 1 using for loop
+ans. for(let i = 100; i >= 1; i--) {
+    console.log(i);
+}
+
+20. Write a program to print even numbers in between 1 to 100 using do-while 
+ans. let i = 1;
+do {
+    if(i % 2 === 0) {
+        console.log(i);
+    }
+    i++;
+} while(i <= 100);
+
+21. Write a program to implement for .. In statement 
+ans. let person = {
+    name: "John",
+    age: 25,
+    city: "New York"
+};
+for (let key in person) {
+    console.log(key + ": " + person[key]);
+}
+
+22. Why function required in JavaScript
+ans. Reusability – Write once, use many times.
+Modularity – Breaks program into smaller, manageable parts.
+Organization – Makes code cleaner and easier to understand.
+Maintainability – Easier to update or debug specific tasks.
+
+23. How to declare a function explain with example
+ans. A function is declared using the function keyword, followed by a name, parentheses () for parameters, and curly braces {} for the code block.
+Example
+function greet(name) {
+    console.log("Hello, " + name + "!");
+}
+greet("John"); // Output: Hello, John!
+
+24. Write JavaScript program to demonstrate function declaration and function calling
+ans.  // Function Declaration
+function greet(name) {
+    console.log("Hello, " + name + "!");
+}
+// Function Calling
+greet("Alice");   // Output: Hello, Alice!
+greet("Bob");     // Output: Hello, Bob!
+
+25. Explain Global variable and local variable with example
+ans. Global Variable:
+Declared outside any function.
+Accessible from any part of the program, including inside functions.
+eg:- let globalVar = 10; // Global variable
+function display() {
+    console.log(globalVar); // Can access global variable
+}
+display(); // Output: 10
+console.log(globalVar); // Output: 10
+
+Local Variable:
+Declared inside a function.
+Accessible only within that function.
+Example:
+function show() {
+    let localVar = 5; // Local variable
+    console.log(localVar); // Output: 5
+}
+show();
+console.log(localVar); // Error: localVar is not defined
+
+26. Explain the concept of function as an Object with example
+ans. In JavaScript, functions are objects, which means they can have properties and methods, be assigned to variables, passed as arguments, and returned from other functions.
+let greet = function(name) {
+    return "Hello, " + name + "!";
+};
+greet.language = "English";
+console.log(greet("Alice")); // Output: Hello, Alice!
+console.log(greet.language); // Output: English
+function display(func, name) {
+    console.log(func(name));
+}
+display(greet, "Bob"); // Output: Hello, Bob!
+
+27. Explain the recursive function with example
+ans. A recursive function is a function that calls itself to solve a smaller version of the original problem. Recursive functions must have a base case to stop the recursion.
+eg- function factorial(n) {
+    if(n === 0) {
+        return 1; // Base case
+    } else {
+        return n * factorial(n - 1); // Recursive call
+    }
+}
+console.log(factorial(5)); // Output: 120
+
+28. Write a javascript program to pass two parameters for adding two number and return a value using function
+ans. // Function Declaration with Two Parameters
+function addNumbers(a, b) {
+    return a + b; // Return the sum
+}
+// Function Call
+let sum = addNumbers(10, 20);
+console.log("Sum: " + sum); // Output: Sum: 30
+
+29. What is array in javascript?
+ans. An array is a special variable that can store multiple values in a single named container. Each value in an array has an index starting from 0.
+
+30. How to declare an array in javascript
+ans. There are two common ways to declare an array:
+Using Array Literal (Most Common):
+let fruits = ["Apple", "Banana", "Mango"];
+Using Array Constructor:
+let numbers = new Array(1, 2, 3, 4, 5);
+
+31. Explain the Array as stacks with example
+ans. In JavaScript, an array can be used as a stack because it supports Last In, First Out (LIFO) operations.
+Main Stack Operations with Array:
+Push() – Adds an element to the top of the stack.
+Pop() – Removes the top element from the stack.
+
+Example:
+let stack = [];
+stack.push(10);
+stack.push(20);
+stack.push(30);
+console.log(stack); // Output: [10, 20, 30]
+let removed = stack.pop();
+console.log("Removed Element: " + removed); // Output: 30
+console.log(stack); // Output: [10, 20]
+
+32. Write a program to create an array with five numbers and display the same
+ans. let numbers = [10, 20, 30, 40, 50];
+for(let i = 0; i < numbers.length; i++) {
+    console.log(numbers[i]);
+}
+
+33. Write a program to add array elements in javascript
+ans. // Create an array
+let numbers = [10, 20, 30, 40, 50];
+// Initialize sum
+let sum = 0;
+// Loop through array to add elements
+for(let i = 0; i < numbers.length; i++) {
+    sum += numbers[i];
+}
+console.log("Sum of array elements: " + sum); // Output: 150
+
+34. Write a program to print array element in reverse order
+ans. // Create an array
+let numbers = [10, 20, 30, 40, 50];
+
+// Loop through the array in reverse order
+for(let i = numbers.length - 1; i >= 0; i--) {
+    console.log(numbers[i]);
+}
+
+35. What is the use of join method in array
+ans. The join() method is used to convert all elements of an array into a single string, with a specified separator between elements.
+Syntax:
+array.join(separator)
+
+36. Explain reverse(),slice(),sort()toString(),splice() methods of an array  with example in javascript 
+ans. reverse() – Reverses the order of elements in the array.
+let numbers = [1, 2, 3, 4];
+numbers.reverse();
+console.log(numbers); // Output: [4, 3, 2, 1]
+
+slice(start, end) – Returns a new array containing elements from start to end-1. Original array is not modified.
+let fruits = ["Apple", "Banana", "Mango", "Orange"];
+let newFruits = fruits.slice(1, 3);
+console.log(newFruits); // Output: ["Banana", "Mango"]
+
+sort() – Sorts array elements alphabetically or numerically (default is alphabetic).
+let numbers = [30, 10, 20];
+numbers.sort();
+console.log(numbers); // Output: [10, 20, 30]
+
+toString() – Converts the array into a comma-separated string.
+let fruits = ["Apple", "Banana", "Mango"];
+console.log(fruits.toString()); // Output: Apple,Banana,Mango
+
+splice(start, deleteCount, item1, item2, ...) – Adds/removes elements from an array.
+let fruits = ["Apple", "Banana", "Mango"];
+fruits.splice(1, 1, "Orange", "Pineapple"); 
+console.log(fruits); // Output: ["Apple", "Orange", "Pineapple", "Mango"]
+
+37. Explain Array Object methods in javascript
+ans sort() – Sorts array alphabetically or numerically.
+eg-arr.sort(); // arr = [0, 1, 2]
+
+toString() – Converts array into a comma-separated string.
+eg-arr.toString(); // "0,1,2"splice() – Adds/removes elements at a specific index.
+
+splice() – Adds/removes elements at a specific index.
+eg-arr.splice(1, 0, 1); // arr = [0, 1, 2]
+
+slice() – Returns a portion of the array. Original array remains unchanged.
+eg-let newArr = arr.slice(1, 3); // newArr = [1, 2]
+
+38. What is boolean in javascript
+ans. A Boolean is a primitive data type that can have only two values:
+true → represents truth
+false → represents falsehood
+
+39. What is Date object in javascript
+ans. The Date object in JavaScript is used to create, get, and manipulate dates and times.
+
+40. Explan five Date object methods with example
+ans. getFullYear() – Returns the year of the date.
+eg-let today = new Date();
+console.log(today.getFullYear()); // Output: 2026
+
+getMonth() – Returns the month (0–11, where 0 = January).
+eg-console.log(today.getMonth()); // Output: 2 (March)
+
+getDate() – Returns the day of the month (1–31).
+eg-console.log(today.getDate()); // Output: 18
+
+getDay() – Returns the day of the week (0–6, where 0 = Sunday).
+eg-console.log(today.getDay()); // Output: 3 (Wednesday)
+
+toLocaleString() – Returns the date and time as a localized string.
+eg-console.log(today.toLocaleString()); // Output: 3/18/2026, 10:30:00 AM (example format)
+
+41. Why we use eval() in javascript explain with example
+ans. The eval() function evaluates or executes a string as JavaScript code. It is used when you need to dynamically execute code stored in a string.
+eg- let x = 10;
+let y = 20;
+let result = eval("x + y"); // Evaluates the string as code
+console.log(result); // Output: 30
+
+42.  Writh a program to demonstrate given methods 1 .isFinite() 2.  Number() 3.  parseFloat() 4. eval()
+ans. // 1. isFinite() – Checks if a value is a finite number
+console.log(isFinite(10));        // true
+console.log(isFinite(Infinity));  // false
+// 2. Number() – Converts a value to a number
+let num1 = Number("123");
+console.log(num1);                // 123
+// 3. parseFloat() – Converts a string to a floating-point number
+let num2 = parseFloat("3.1415");
+console.log(num2);                // 3.1415
+// 4. eval() – Evaluates a string as JavaScript code
+let a = 5;
+let b = 10;
+let sum = eval("a + b");
+console.log(sum);                 // 15
+
+43. Why Math object using in javascript
+ans. The Math object is used in JavaScript to perform calculations, rounding, random numbers, and access mathematical constants.
+
+44. Write a five Math object with examples
+ans. Math.sqrt() – Returns the square root of a number.
+eg-console.log(Math.sqrt(25)); // Output: 5
+
+Math.pow() – Returns a number raised to a power.
+eg-console.log(Math.pow(2, 3)); // Output: 8 (2^3)
+
+Math.abs() – Returns the absolute value of a number.
+eg-console.log(Math.abs(-10)); // Output: 10
+
+Math.round() – Rounds a number to the nearest integer.
+eg-console.log(Math.round(4.7)); // Output: 5
+console.log(Math.round(4.3)); // Output: 4
+
+Math.random() – Returns a random number between 0 and 1.
+eg-console.log(Math.random()); // Output: e.g., 0.537283 (random)
+
+45. What is the Number object in javascript
+ans. The Number object in JavaScript is used to handle numeric values and perform numeric operations with its properties and methods.
+
+46. What is String object in javascript,Explain five methods of string objects
+ans. The String object is a built-in object in JavaScript used to store and manipulate text (strings). Strings can be created as string literals or using the String() constructor.
+Five Common String Methods with Examples
+length – Returns the length of the string.
+eg-let str = "Hello";
+console.log(str.length); // Output: 5
+
+toUpperCase() – Converts string to uppercase.
+eg-console.log(str.toUpperCase()); // Output: "HELLO"
+
+toLowerCase() – Converts string to lowercase.
+eg-console.log(str.toLowerCase()); // Output: "hello"
+
+charAt(index) – Returns the character at the specified index.
+eg-console.log(str.charAt(1)); // Output: "e"
+
+concat() – Combines two or more strings.
+eg-let str2 = " World";
+console.log(str.concat(str2)); // Output: "Hello World"
+
+47. Explain charAt(),charCodeAt() methods in javascript
+ans. charAt() → returns the character at a given index.
+charCodeAt() → returns the Unicode value of the character at a given index.
+
+48. Explain  indexOf(),lastIndexOf() methods in javascript
+ans. indexOf() → finds the first occurrence of a substring.
+lastIndexOf() → finds the last occurrence of a substring.
+
+49. Explain  substr(),substring() methods in javascript
+ans. substr() → extracts substring using start index and length
+substring() → extracts substring using start and end indices
+
+50. What is the Need for Regular Expressions in JavaScript
+ans. Regular Expressions in JavaScript are needed to validate, search, replace, split, and process text efficiently using patterns.
+
+51. What is the concept of Regular Expression
+ans. A Regular Expression is a sequence of characters that forms a search pattern. It is used to match, search, and manipulate text in a string based on specific rules.
+
+52. How to create the regular expression in javascript,explain with example
+ans. In JavaScript, a Regular Expression (RegEx) can be created in two ways:
+1. Using Literal Notation
+Enclose the pattern between forward slashes / /.
+eg-let pattern = /JavaScript/; // RegEx to match "JavaScript"
+let str = "I love JavaScript";
+console.log(pattern.test(str)); // Output: true
+2. Using RegExp Constructor
+Use new RegExp("pattern") syntax.
+eg-let pattern = new RegExp("JavaScript");
+let str = "Learning JavaScript is fun";
+console.log(pattern.test(str)); // Output: true
+
+53. What are the common flags using in Regular Expression
+ans. Common RegEx flags are g (global), i (ignore case), m (multiline), s (dotall), u (unicode), y (sticky) – they modify how the pattern searches strings.
+
+54. Explain the Regular Expression Constructor with example
+ans. In JavaScript, a Regular Expression (RegEx) can be created dynamically using the RegExp() constructor. This is useful when the pattern is not known in advance or comes from a variable.
+eg-let pattern = new RegExp("JavaScript"); // Create RegEx for "JavaScript"
+let str = "I love JavaScript";
+console.log(pattern.test(str)); // Output: true
+
+55. Explain the escape codes in Regular Expression with example
+ans. Regular Expressions (RegEx), escape codes are special sequences that allow you to match characters that have a special meaning in RegEx or to match certain predefined character classes. They are written with a backslash \ followed by a character.
+eg-let regex = /\d/;
+console.log("User123".match(regex)); // Output: ["1"]
+
+56. Explain Repetition quantifiers in Regular expression with example
+ans. Regular Expressions (RegEx), repetition quantifiers allow you to specify how many times a character, group, or character class should appear in a match. They make RegEx very powerful for matching patterns of varying lengths.
+eg-let regex = /go+/;
+console.log("gooooal".match(regex)); // Output: ["goooo"]
+console.log("gale".match(regex));    // Output: null
+
+57. Explain the character classes in Regular expression
+ans. Regular Expressions (RegEx), character classes allow you to define a set of characters that you want to match at a particular position in a string. They make patterns more flexible and precise.
+eg-let regex = /[abc]/;
+console.log("apple".match(regex)); // Output: ["a"]
+console.log("dog".match(regex));   // Output: null
+
+58.  Explain the test(),complie(),execute() methods of regular expression in details with example
+ans. test() – Tests for a match
+Purpose: Checks if the pattern exists in a string.
+Example:
+let regex = /hello/;
+console.log(regex.test("hello world")); // Output: true
+console.log(regex.test("hi there"));    // Output: false
+
+compile() – Recompiles a RegEx
+Purpose: Re-initializes or updates an existing RegEx object with a new pattern and flags.
+Example:
+let regex = /hello/;
+console.log(regex.test("hello world")); // true
+// Recompile with a new pattern
+regex.compile("world", "i");
+console.log(regex.test("hello world")); // true
+console.log(regex.test("HELLO"));       // false
+
+exec() – Executes a search and returns details
+Purpose: Searches a string for a match and returns an array with detailed info.
+Example:
+let regex = /hello/;
+let result = regex.exec("hello world");
+console.log(result);
+
+59. Write a short notes on String method in Regular Expression 
+ans. In JavaScript, strings have several methods that can work with Regular Expressions to search, match, replace, or split text patterns.
+1. match()
+Purpose: Returns matches of a pattern in a string as an array.
+2. search()
+Purpose: Returns the index of the first match of a pattern in a string, or -1 if not found.
+3. replace()
+Purpose: Replaces matched text with a new string.
+4. split()
+Purpose: Splits a string into an array using a RegEx pattern as the separator.
+5. matchAll()
+Purpose: Returns an iterator for all matches, including capture groups.
+
+60.  What is javascript object model
+ans. JavaScript Object Model is the way JavaScript represents objects, properties, and methods and how they interact in memory. It defines how objects are created, structured, and accessed.
+
+61. What is browser object model
+ans. JavaScript objects that allow interaction with the browser, like window, navigator, screen, history, and location.
+eg-console.log(window.innerWidth); // Browser window width
+console.log(navigator.userAgent); // Browser info
+
+62. What is Document object model
+ans. A tree-like representation of a web page that lets JavaScript access and manipulate HTML elements using the document object
+eg- document.getElementById("demo").innerHTML = "Hello World";
+
+63. What are the three version of DOM?Explain with example
+ans. 1. Level 1 DOM (Core & HTML)
+Introduced basic document structure manipulation.
+Focused on static HTML content: access and modify elements, attributes, and text.
+Example:
+let para = document.getElementById("demo");
+para.innerHTML = "Hello DOM Level 1";
+2. Level 2 DOM (Core, HTML & Events)
+Added style manipulation, events, and traversal of the document tree.
+Enabled dynamic interaction with the page.
+Example:
+let btn = document.getElementById("myBtn");
+btn.addEventListener("click", () => alert("DOM Level 2 Event!"));
+3. Level 3 DOM
+Added XPath, keyboard events, load/save of XML, and advanced methods.
+Allowed more complex document manipulations and queries.
+Example:
+let nodes = document.evaluate("//p", document, null, XPathResult.ANY_TYPE, null);
+let node = nodes.iterateNext();
+while(node) {
+    console.log(node.textContent);
+    node = nodes.iterateNext();
+}
+
+64. What is DOM tree,explain with diagram
+ans. The DOM Tree is a hierarchical (tree-like) representation of an HTML document, where:
+Each HTML element is a node.
+The document object is the root node.
+Nodes can have child nodes (nested elements), parent nodes, and sibling nodes.
+This structure allows JavaScript to access, modify, and traverse the HTML content.
+diagram- 
+document
+ └── html
+     ├── head
+     │   └── title
+     │        └── "My Page"
+     └── body
+         ├── h1
+         │    └── "Hello"
+         └── p
+              └── "Welcome to the DOM tree"
+
+65. What is getElementById(),getElementByName()?Explain with example
+ans. 1. getElementById()
+Purpose: Returns the element with the specified id.
+eg-<!DOCTYPE html>
+<html>
+<body>
+  <p id="demo">Hello World</p>
+  <script>
+    let element = document.getElementById("demo");
+    element.innerHTML = "Hello JavaScript!";
+  </script>
+</body>
+</html>
+2. getElementsByName()
+Purpose: Returns a NodeList of elements with the specified name attribute
+eg- <!DOCTYPE html>
+<html>
+<body>
+  <input type="radio" name="gender" value="Male">
+  <input type="radio" name="gender" value="Female">
+  <script>
+    let radios = document.getElementsByName("gender");
+    radios[0].checked = true; // Selects the first radio button
+  </script>
+</body>
+</html>
+
+66. Explain the various creating of nodes with example
+ans. 1. Creating an Element Node
+Purpose: To create a new HTML element (like <div>, <p>).
+Example:
+let para = document.createElement("p");   // Create <p> element
+para.innerHTML = "Hello World!";         // Add text inside
+document.body.appendChild(para);         // Add it to body
+2. Creating a Text Node
+Purpose: To create text content for an element.
+Example:
+let text = document.createTextNode("This is a text node");
+let div = document.createElement("div");
+div.appendChild(text);                    // Add text inside div
+document.body.appendChild(div);
+3. Creating an Attribute Node
+Purpose: To create a new attribute for an element.
+Example:
+let link = document.createElement("a");
+let attr = document.createAttribute("href"); // Create href attribute
+attr.value = "https://www.example.com";
+link.setAttributeNode(attr);                 // Attach attribute to element
+link.innerHTML = "Visit Example";
+document.body.appendChild(link);
+4. Creating a Comment Node
+Purpose: To add a comment dynamically in the DOM.
+Example:
+let comment = document.createComment("This is a comment");
+document.body.appendChild(comment);
+5. Creating a Document Fragment (Temporary Node)
+Purpose: To create a lightweight container to hold multiple nodes before adding them to the DOM.
+Example:
+let fragment = document.createDocumentFragment();
+for(let i=1; i<=3; i++) {
+    let li = document.createElement("li");
+    li.textContent = "Item " + i;
+    fragment.appendChild(li);
+}
+document.getElementById("myList").appendChild(fragment);
+
+67. Build a documet tree based on the below  program  
+ <p>A paragraph of <em>text</em> is just an example</p>
+ans. 
+document
+ └── p
+     ├── "A paragraph of "
+     ├── em
+     │    └── "text"
+     └── " is just an example"
+
+68. How to Inserting and Appending Nodes DOM,explain with example?
+ans. 1.Append Node – Add as last child
+eg-let li = document.createElement("li");
+li.textContent = "Item 2";
+document.getElementById("myList").appendChild(li);
+
+2.Insert Before – Add before a specific node
+eg-let li = document.createElement("li");
+li.textContent = "Item 0";
+let ul = document.getElementById("myList");
+ul.insertBefore(li, ul.firstChild);
+
+3.Modern Append – Can add multiple nodes or text
+eg-document.body.append("Hello!", li);
+
+69. What is the need for Form validation in javascript
+ans. Form validation in JavaScript ensures user input is correct, complete, and secure before submission, improving user experience, reducing server load, and preventing invalid or malicious data.
+
+70. Write a short note on PHP.
+ans. PHP (Hypertext Preprocessor)
+PHP is a server-side scripting language used to create dynamic web pages.
+It can interact with databases, handle forms, and generate HTML.
+
+71. How to create and run a PHP page?
+ans. Install a server like XAMPP/WAMP.
+Create a file with .php extension.
+Place it in the server folder (htdocs or www).
+Open it in a browser via http://localhost/filename.php.
+
+72. Explain how to add comments in PHP with an example program.
+ans. Use // or # for single-line comments, and /* */ for multi-line comments.
+
+73. How to create a variable in PHP ? Give example.
+ans. Create using $name = value; Example: $age = 20;
+
+74. How to create constants using define function in PHP?
+ans. Use define("NAME", value); Example: define("PI", 3.14);
+
+75. Mention PHP data Types.
+ans. i)Scalar Data Type
+     Integer-holds a  whole number
+     Float –holds a  floating - point number
+     String- holds a series of characters
+     Boolean- holds either true or false values
+ii)Compound Data Type
+     Array-holds array of data items
+     Object-holds programming objects
+iii)Special Data Type 
+     Resource-holds a data resource
+     Null-holds a value of NULL
+
+76. Demonstrate with an example program scalar data type in PHP.
+ans. <?php
+// Integer
+$age = 25;
+// Float
+$salary = 25000.50;
+// String
+$name = "Anushka";
+// Boolean
+$isStudent = true;
+// Display values
+echo "Name: $name<br>";
+echo "Age: $age<br>";
+echo "Salary: $salary<br>";
+echo "Is Student: " . ($isStudent ? "Yes" : "No");
+?>
+
+77. Demonstrate on arithmetic operators in PHP. 
+ans. <?php
+$a = 10;
+$b = 3;
+echo $a + $b;  // 13 (Addition)
+echo $a - $b;  // 7  (Subtraction)
+echo $a * $b;  // 30 (Multiplication)
+echo $a / $b;  // 3.3333 (Division)
+echo $a % $b;  // 1  (Modulus)
+echo $a ** $b; // 1000 (Exponentiation)
+?>
+
+78. Demonstrate on comparison operators in PHP.
+ans. <?php
+$a=10; $b=20;
+echo $a==$b; // 0 (False)
+echo $a!=$b; // 1 (True)
+echo $a<$b;  // 1 (True)
+?>
+
+79. Write a short note on increment and decrement operators in PHP.
+ans. Increment (++) → increases a variable by 1
+Decrement (--) → decreases a variable by 1
+Pre (++$a / --$a) → change happens before returning value
+Post ($a++ / $a--) → change happens after returning value
+Example:
+$a = 5;
+echo ++$a;  // 6 (pre-increment)
+echo $a--;  // 6 (post-decrement, then $a becomes 5)
+
+80. Demonstrate on logical operators in PHP.
+ans. && → AND, true if both operands are true
+|| → OR, true if any operand is true
+! → NOT, reverses the value
+xor → Exclusive OR, true if only one operand is true
+Example:
+<?php
+$a = true; $b = false;
+echo $a && $b; // 0 (False)
+echo $a || $b; // 1 (True)
+echo !$b;      // 1 (True)
+echo $a xor $b;// 1 (True)
+?>
+
+81.  Write a short note on string operators in PHP.
+ans. . → Join strings
+.= → Add to an existing string
+
+82. Explain array operators in PHP.
+ans. + → Union of arrays
+== → Arrays are equal (same key/value pairs)
+=== → Arrays are identical (same key/value and order)
+!= / <> → Not equal
+!== → Not identical
+Example:
+$a = ["a"=>"Apple"];
+$b = ["b"=>"Banana"];
+print_r($a + $b); // ["a"=>"Apple","b"=>"Banana"]
+
+83. Demonstrate if-else statement in PHP.
+ans. <?php
+$age = 16;
+if ($age >= 18) echo "Eligible";
+else echo "Not Eligible";
+?>
+
+84. Demonstrate elsif statement in PHP.
+ans. <?php
+$marks = 50;
+if ($marks >= 75) echo "A";
+elseif ($marks >= 50) echo "B";
+else echo "C";
+?>
+
+85. Demonstrate switch statement in PHP.
+ans. <?php
+$day = 6;
+switch($day) {
+    case 1: echo "Mon"; break;
+    case 2: echo "Tue"; break;
+    default: echo "Weekend";
+}
+?>
+
+86. Mention different looping statements available in PHP
+ans. while loop – Repeats a block of code while a condition is true.
+do…while loop – Executes the block at least once, then repeats while condition is true.
+for loop – Repeats a block a fixed number of times.
+foreach loop – Iterates over each element of an array.
+
+87.Explain while and do…while loop with example program in PHP. 
+ans. <?php
+// while loop
+$i = 1;
+while ($i <= 3) {
+    echo $i . " ";  // Output: 1 2 3
+    $i++;
+}
+
+// do…while loop
+$j = 1;
+do {
+    echo $j . " ";  // Output: 1 2 3
+    $j++;
+} while ($j <= 3);
+?>
+
+88. Explain for  and for each loop with example programin PHP.
+ans. <?php
+// for loop
+for($i=1;$i<=3;$i++) echo $i." "; // 1 2 3
+
+// foreach loop
+$arr=["A","B","C"];
+foreach($arr as $val) echo $val." "; // A B C
+?>
+
+89. In PHP which function is used to count characters and words in a string? Give example.
+ans. strlen($str) → Counts characters
+str_word_count($str) → Counts words
+Example:
+$str = "Hello PHP";
+echo strlen($str);        // 9
+echo str_word_count($str); // 2 
+
+90. Explain with example the use of strstr() in PHP?
+ans. <?php
+$str = "Hello PHP World";
+// Returns from substring
+echo strstr($str, "PHP");       
+// Output: PHP World
+// Returns before substring
+echo strstr($str, "PHP", true); 
+// Output: Hello 
+?>
+
+91. Demonstrate strrpos() in PHP.
+ans. <?php
+$str = "Hello PHP World PHP";
+$pos = strrpos($str, "PHP");
+echo "Last occurrence of 'PHP' is at position: " . $pos;
+?>
+
+92. Demonstrate the following string functions in PHP.       i)str_word_count()
+ii)strstr()
+iii)strpos()
+iv)substr_count()
+v)strlen()
+ans. <?php
+$str = "Hello PHP World PHP";
+// 1. str_word_count() – Counts words in a string
+echo "Word count: " . str_word_count($str) . "<br>"; 
+// Output: 4
+// 2. strstr() – Returns substring starting from first occurrence
+echo "strstr: " . strstr($str, "PHP") . "<br>"; 
+// Output: PHP World PHP
+// 3. strpos() – Returns position of first occurrence of substring
+echo "Position of 'PHP': " . strpos($str, "PHP") . "<br>"; 
+// Output: 6
+// 4. substr_count() – Counts number of times substring occurs
+echo "Count of 'PHP': " . substr_count($str, "PHP") . "<br>"; 
+// Output: 2
+// 5. strlen() – Counts number of characters
+echo "Length of string: " . strlen($str) . "<br>"; 
+// Output: 18
+?>
+
+93. Mention different types of arrays in PHP.
+ans. Indexed Array – Uses numeric indexes.
+$fruits = ["Apple", "Banana"];
+
+Associative Array – Uses named keys.
+$ages = ["Anushka"=>20, "Ravi"=>22];
+
+Multidimensional Array – Array of arrays.
+$students = [["Anushka",20], ["Ravi",22]];
+
+94. How to create indexed array in PHP?
+ans. <?php
+$fruits = ["Apple", "Banana", "Cherry"]; // Indexed array
+echo $fruits[0]; // Output: Apple
+?>
+
+95. How to modify and delete data in arrays in PHP?
+ans. Modifying Elements
+Access an element using its index or key and assign a new value.
+eg-<?php
+$fruits = ["Apple", "Banana", "Cherry"];
+$fruits[1] = "Mango";  // Modify element at index 1
+print_r($fruits);
+?>
+Deleting Elements
+Use unset() to remove an element from the array.
+<?php
+unset($fruits[0]); // Delete element at index 0
+print_r($fruits);
+?>
+
+96. Write a short note on PHP associative arrays.
+ans. Arrays with named keys instead of numeric indexes.
+Example:
+<?php
+$ages = ["Anushka" => 20, "Ravi" => 22];
+echo $ages["Ravi"]; // 22
+?>
+
+97. Explain how to loop through an associative array using foreach loop in PHP.
+ans. Purpose: To iterate over each key-value pair in an associative array.
+syntax:
+foreach ($array as $key => $value) {
+    // code using $key and $value
+}
+eg-
+<?php
+$ages = ["Anushka" => 20, "Ravi" => 22, "Priya" => 19];
+foreach ($ages as $name => $age) {
+    echo $name . " is " . $age . " years old.<br>";
+}
+?>
+
+98. Explain any three array functions with example in PHP.
+ans. 1. count() – Counts elements
+<?php
+$fruits = ["Apple","Banana","Cherry"];
+echo count($fruits); // Output: 3
+?>
+2. array_push() – Adds elements to end
+<?php
+array_push($fruits,"Mango");
+print_r($fruits); // Output: ["Apple","Banana","Cherry","Mango"]
+?>
+3. array_pop() – Removes last element
+<?php
+array_pop($fruits);
+print_r($fruits); // Output: ["Apple","Banana","Cherry"]
+?>
+
+99. Explain implode() and explode() in PHP.
+ans. implode() – Convert array to string
+Example:
+<?php
+$fruits = ["Apple", "Banana", "Cherry"];
+$str = implode(", ", $fruits);
+echo $str;
+?>
+2. explode() – Convert string to array
+Example:
+<?php
+$str = "Apple,Banana,Cherry";
+$fruits = explode(",", $str);
+print_r($fruits);
+?>
+
+100. Explain multidimensional array with an example in PHP.
+ans. Definition: An array that contains one or more arrays inside it.
+eg- <?php
+$students = [
+    ["Anushka", 20, "A"],
+    ["Ravi", 22, "B"],
+    ["Priya", 19, "A"]
+];
+
+// Accessing elements
+echo $students[1][0]; // Output: Ravi
+echo $students[2][2]; // Output: A
+?>
+
+101. How to create a function in PHP?
+ans. <?php
+function greet($name) {
+    return "Hello " . $name;
+}
+echo greet("Anushka"); // Output: Hello Anushka
+?>
+
+Use the function keyword to define a function.
+Call the function by its name.
+
+102. Explain how to pass array to functions in PHP.
+ans. Arrays can be passed as parameters to a function.
+The function can access or manipulate all array elements.
+Example:
+<?php
+function displayFruits($fruits) {
+    foreach ($fruits as $fruit) {
+        echo $fruit . " ";
+    }
+}
+$fruitsArray = ["Apple", "Banana", "Cherry"];
+displayFruits($fruitsArray);
+?>
+
+103.  Demonstrate pass by reference with an example program in PHP.
+ans. Normally, PHP passes arguments by value, meaning the function works on a copy of the variable.
+Pass by reference allows the function to directly modify the original variable.
+Use & before the parameter in the function definition to pass by reference.
+Example:
+<?php
+function addTen(&$num) {
+    $num += 10;
+}
+$value = 20;
+addTen($value);  // Pass by reference
+echo "Value after function call: " . $value;
+?>
+
+104. Explain with an example program how global data can be accessed in PHP.
+ans. <?php
+$number = 10; // global variable
+function multiplyByTwo() {
+    global $number; // access global variable
+    $number *= 2;
+}
+multiplyByTwo();
+echo $number; // Output: 20
+?>
+
+105. Explain anonymous function in PHP.
+ans. A function without a name, also called a closure.
+Can be stored in a variable and called using that variable.
+Example:
+<?php
+$greet = function($name) {
+    return "Hello " . $name;
+};
+echo $greet("Anushka"); // Output: Hello Anushka
+?>
+
+106. Explain how to return errors from functions in PHP.
+ans. Functions can return error values using return.
+Commonly, functions return false or a custom message to indicate an error.
